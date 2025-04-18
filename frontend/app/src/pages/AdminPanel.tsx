@@ -7,24 +7,45 @@ const AdminPanel = () => {
 
   useEffect(() => {
     const fetchLeaves = async () => {
-      const res = await API.get("/leaves");
-      setLeaves(res.data);
+      try {
+        const res = await API.get("/leaves");
+
+        // Cast status values to proper union type
+        const formattedLeaves: Leave[] = res.data.map((leave: any) => ({
+          ...leave,
+          status: leave.status as "pending" | "accepted" | "rejected",
+        }));
+
+        setLeaves(formattedLeaves);
+      } catch (err) {
+        console.error("Failed to fetch leaves", err);
+      }
     };
 
     fetchLeaves();
   }, []);
 
-  const handleUpdateStatus = async (leaveId: string, status: string) => {
-    await API.put(`/leaves/${leaveId}`, { status });
-    setLeaves(leaves.map((leave) =>
-      leave._id === leaveId ? { ...leave, status } : leave
-    ));
+  const handleUpdateStatus = async (
+    leaveId: string,
+    status: "pending" | "accepted" | "rejected"
+  ) => {
+    try {
+      await API.put(`/leaves/${leaveId}`, { status });
+
+      setLeaves((prevLeaves) =>
+        prevLeaves.map((leave) =>
+          leave._id === leaveId ? { ...leave, status } : leave
+        )
+      );
+    } catch (err) {
+      console.error("Failed to update status", err);
+    }
   };
 
   return (
     <div className="bg-white text-black px-4 py-6 min-h-screen">
       <h2 className="text-2xl font-bold mb-6 text-center">Admin Panel - Leave Requests</h2>
-      
+
       <div className="overflow-x-auto">
         <table className="min-w-full text-sm border border-gray-200">
           <thead className="bg-gray-100">
