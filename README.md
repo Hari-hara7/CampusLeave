@@ -37,6 +37,16 @@ A full-stack web app where **students can apply for leave**, and **teachers/admi
 
 ## 🛠️ Installation & Setup
 
+
+## 📦 Clone the Repository
+
+```bash
+git clone https://github.com/your-username/your-repo-name.git
+cd your-repo-name
+```
+
+
+
 ### 📦 Backend Setup
 
 ```bash
