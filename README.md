@@ -42,7 +42,7 @@ A full-stack web app where **students can apply for leave**, and **teachers/admi
 
 ```bash
 git clone https://github.com/Hari-hara7/CampusLeave.git
-cd your-repo-name
+
 ```
 
 
