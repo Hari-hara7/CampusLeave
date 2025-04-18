@@ -41,7 +41,7 @@ A full-stack web app where **students can apply for leave**, and **teachers/admi
 ## 📦 Clone the Repository
 
 ```bash
-git clone https://github.com/your-username/your-repo-name.git
+git clone https://github.com/Hari-hara7/CampusLeave.git
 cd your-repo-name
 ```
 
