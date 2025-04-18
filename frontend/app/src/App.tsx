@@ -5,7 +5,7 @@ import ApplyLeave from "./pages/ApplyLeave";
 import Dashboard from "./pages/Dashboard";
 import AdminPanel from "./pages/AdminPanel";
 import ProtectedRoute from "./components/ProtectedRoute";
-import NavBar from "./components/NavBar";  // Import the NavBar
+import NavBar from "./components/NavBar";  
 
 function App() {
   return (
