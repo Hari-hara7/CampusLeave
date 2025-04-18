@@ -1,8 +1,15 @@
-import { Navigate } from "react-router-dom";
+// src/components/ProtectedRoute.tsx
 
-const ProtectedRoute = ({ children }: { children: JSX.Element }) => {
+import { Navigate } from "react-router-dom";
+import { ReactNode } from "react";
+
+interface Props {
+  children: ReactNode;
+}
+
+const ProtectedRoute = ({ children }: Props) => {
   const token = localStorage.getItem("token");
-  return token ? children : <Navigate to="/login" />;
+  return token ? children : <Navigate to="/login" replace />;
 };
 
 export default ProtectedRoute;

@@ -5,12 +5,15 @@ import ApplyLeave from "./pages/ApplyLeave";
 import Dashboard from "./pages/Dashboard";
 import AdminPanel from "./pages/AdminPanel";
 import ProtectedRoute from "./components/ProtectedRoute";
-import NavBar from "./components/NavBar";  
+// frontend/app/src/App.tsx
+
+import NavBar from "./components/NavBar"; 
+
 
 function App() {
   return (
     <BrowserRouter>
-      <NavBar /> {/* Add NavBar component here */}
+      <NavBar /> 
       <Routes>
         <Route path="/" element={<Register />} />
         <Route path="/login" element={<Login />} />
