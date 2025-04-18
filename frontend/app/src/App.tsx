@@ -7,7 +7,7 @@ import AdminPanel from "./pages/AdminPanel";
 import ProtectedRoute from "./components/ProtectedRoute";
 // frontend/app/src/App.tsx
 
-import NavBar from "./components/NavBar"; 
+import NavBar from "./components/Navbar.tsx"; 
 
 
 function App() {
