@@ -1,6 +1,12 @@
 # 🏫 Student Leave Management System
 
 A full-stack web app where **students can apply for leave**, and **teachers/admins can view, accept or reject requests**. Built using the **MERN stack** with a modern, clean UI powered by **TailwindCSS + Vite + TypeScript**.
+<p align="center">
+  <img src="https://img.shields.io/badge/Tech-MERN-blue?style=flat-square&logo=appveyor" />
+  <img src="https://img.shields.io/badge/Frontend-TypeScript-blueviolet?style=flat-square&logo=typescript" />
+  <img src="https://img.shields.io/badge/Backend-JavaScript-green?style=flat-square&logo=node.js" />
+  <img src="https://img.shields.io/badge/Styling-TailwindCSS-38bdf8?style=flat-square&logo=tailwind-css" />
+</p>
 
 ---
 
