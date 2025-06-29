@@ -1,6 +1,0 @@
-version: 2
-updates:
-  - package-ecosystem: "npm" # or "yarn", "pip", "gradle", etc.
-    directory: "/"           # location of package.json or requirements.txt
-    schedule:
-      interval: "weekly"     # daily, weekly, or monthly
