@@ -116,3 +116,71 @@ PORT=5000
 | GET    | `/api/leaves/mystatus`        | Get student's own leave status              |
 | GET    | `/api/leaves`                 | Get all leave requests (Teacher only)       |
 | PATCH  | `/api/leaves/:id/status`      | Accept or Reject leave request (Teacher)    |
+
+---
+
+## 🤝 Contributing
+
+We welcome contributions to the Campus Leave Management System! Whether you're fixing bugs, adding new features, or improving documentation, your help is appreciated.
+
+### 🛠️ Development Setup
+
+1. **Fork the repository** and clone your fork:
+   ```bash
+   git clone https://github.com/YOUR_USERNAME/CampusLeave.git
+   cd CampusLeave
+   ```
+
+2. **Set up the backend**:
+   ```bash
+   cd backend
+   npm install
+   cp .env.example .env  # Create your environment file
+   npm run dev
+   ```
+
+3. **Set up the frontend**:
+   ```bash
+   cd frontend/app
+   npm install
+   npm run dev
+   ```
+
+### 📝 Contribution Guidelines
+
+- **Code Style**: Follow the existing code style and formatting
+- **Commits**: Use clear, descriptive commit messages
+- **Testing**: Ensure your changes don't break existing functionality
+- **Documentation**: Update documentation if you're changing functionality
+
+### 🔄 Pull Request Process
+
+1. Create a new branch for your feature: `git checkout -b feature/your-feature-name`
+2. Make your changes and commit them with descriptive messages
+3. Push to your fork: `git push origin feature/your-feature-name`
+4. Create a pull request with a clear title and description
+5. Wait for review and address any feedback
+
+### 🐛 Reporting Issues
+
+If you find a bug or have a feature request:
+1. Check if the issue already exists in the [Issues](https://github.com/Hari-hara7/CampusLeave/issues) section
+2. If not, create a new issue with:
+   - Clear description of the problem or feature
+   - Steps to reproduce (for bugs)
+   - Expected vs actual behavior
+   - Screenshots if applicable
+
+### 💡 Feature Ideas
+
+We're always looking for ways to improve! Some areas where contributions would be especially welcome:
+- Email notifications for leave status updates
+- Calendar integration for leave dates
+- Mobile app development
+- Advanced reporting and analytics
+- Multi-language support
+- Dark mode theme
+
+### 🙏 Recognition
+
+All contributors will be acknowledged in our contributors list. Thank you for helping make this project better!
